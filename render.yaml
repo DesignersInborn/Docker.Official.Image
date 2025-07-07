@@ -2,7 +2,7 @@ services:
   - type: web
     name: rocketchat
     env: docker
-    repo: https://github.com/YOUR-USERNAME/Docker.Official.Image
+    repo: https://github.com/DesignersInborn/Docker.Official.Image
     plan: free
     dockerfilePath: ./Dockerfile
     envVars:
@@ -11,7 +11,7 @@ services:
       - key: PORT
         value: 3000
       - key: MONGO_URL
-        value: mongodb+srv://YOUR_MONGO_CONNECTION_STRING
+        value: mongodb+srv://mongodb+srv://designersinbornadmin:wNPH0LqYdEqml4L3@rocketchatdesignersinbo.2jfyyze.mongodb.net/?retryWrites=true&w=majority&appName=RocketChatDesignersInborn
       - key: MONGO_OPLOG_URL
-        value: mongodb+srv://YOUR_MONGO_CONNECTION_STRING/local
+        value: mongodb+srv://mongodb+srv://designersinbornadmin:wNPH0LqYdEqml4L3@rocketchatdesignersinbo.2jfyyze.mongodb.net/?retryWrites=true&w=majority&appName=RocketChatDesignersInborn/local
     autoDeploy: true
