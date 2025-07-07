@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: rocketchat
+    env: docker
+    repo: https://github.com/YOUR-USERNAME/Docker.Official.Image
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: ROOT_URL
+        value: https://rocketchat.onrender.com
+      - key: PORT
+        value: 3000
+      - key: MONGO_URL
+        value: mongodb+srv://YOUR_MONGO_CONNECTION_STRING
+      - key: MONGO_OPLOG_URL
+        value: mongodb+srv://YOUR_MONGO_CONNECTION_STRING/local
+    autoDeploy: true
